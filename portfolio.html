@@ -1,0 +1,102 @@
+<html>
+<style>
+
+body {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #dcdcde;
+    background: #1c1c1f;
+    line-height: 1.2
+}
+#sidebar {
+    width: 200px;
+    background-color: #070708;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    padding: 2.5rem;
+    text-align: center;
+}
+#main {
+    padding: 2rem;
+    margin-left: 300px;
+}
+@media (max-width: 700px) {
+    #sidebar {
+        display: none;
+    }
+    #main {
+        margin-left: auto;
+    }
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.skill-icon {
+    height: 3rem;
+    border-radius: 20%;
+}
+#profile-pic {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.section {
+    margin: 2rem 0 4rem 0;
+}
+
+a {
+    color: #b2c0eb;
+}
+
+</style>
+<body>
+    <div id="sidebar">
+        <img id="profile-pic" src="becca.jpg">
+        <nav>
+            <li><a class="nav-link" href="#about">About</a> </li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </nav>
+
+    </div>
+    <div id="main">
+        <div id="about" class="section">
+            <h1> Hi! I'm Becca</h1>
+            <p> I'm currently a first year student at Olin College of Engineering, studying engineering with a concentration in computing.
+            I've been coding for over two years. I started out self-taught, and since then I've been learning through school, an internship, and frequent side projects. Most of my experience is with web development, but I love learning new skills.  </p>
+        </div>
+        <div id="skills" class="section">
+            <h2>My Skills</h2>
+            <h3>My favorites:</h3>
+            <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+            <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">
+            <img class="skill-icon" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png">
+            <img class="skill-icon" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png">
+
+            <h3>Experience with:</h3>
+            <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+            <img class="skill-icon" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png">
+            <img class="skill-icon" src="https://vuejs.org/images/logo.png">
+            <img class="skill-icon" src="https://angular.io/assets/images/logos/angular/angular.png">
+
+        </div>
+        <div id="projects" class="section">
+            <h2>My Projects</h2>
+            <p>See some of my projects on <a href="https://github.com/RebeccaFlach">Github</a></p>
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>You can get in touch with me at <a href="mailto:rebeccabflach@gmail.com">rebeccabflach@gmail.com</a></p>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/rebecca-flach/">LinkedIn</a>!</p>
+        </div>
+    </main>
+</body>
+</html>
