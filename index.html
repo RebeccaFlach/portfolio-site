@@ -25,13 +25,31 @@ body {
     padding: 2.5rem;
     text-align: center;
 }
+#intro {
+    border-bottom: 1px solid #dcdcde;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
 #main {
     padding: 2rem;
     margin-left: 300px;
 }
+
 @media (max-width: 700px) {
+    nav {
+        display: none;
+    }
     #sidebar {
-        display: none !important;
+        display: block;
+        position:relative;
+        width: 100%;
+        height: auto;
+        padding: 2rem 0 2rem 0;
+    }
+    #intro {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     #main {
         margin-left: auto;
@@ -69,10 +87,12 @@ a {
 </style>
 <body>
     <div id="sidebar">
-        <img id="profile-pic" src="becca.jpg">
-        <p>Rebecca Flach</p>
-        <p><em>Student Developer</em></p>
-        <p>___________________</p>
+        <div id="intro">
+            <img id="profile-pic" src="becca.jpg">
+            <p>Rebecca Flach</p>
+            <p><em>Student Developer</em></p>
+            <p><em>“more than an [absolutely amazing] coder. she’s a friend”- ziad</em></p>
+        </div>
         <nav>
             <li><a class="nav-link" href="#about">About</a> </li>
             <li><a class="nav-link" href="#skills">Skills</a></li>
