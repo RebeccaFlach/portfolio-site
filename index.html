@@ -1,98 +1,172 @@
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
     <title>Rebecca Flach</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+    <script src="https://kit.fontawesome.com/28522e45ec.js" crossorigin="anonymous"></script>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
 </head>
 <style>
+    body {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #dcdcde;
+        background: #1c1c1f;
+        line-height: 1.2;
+        font-family: "Nunito", sans-serif;
+    }
 
-body {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #dcdcde;
-    background: #1c1c1f;
-    line-height: 1.2;
-    font-family: "Nunito", sans-serif;
-}
-#sidebar {
-    width: 200px;
-    background-color: #070708;
-    position: fixed;
-    top:0;
-    left:0;
-    height: 100vh;
-    padding: 2.5rem;
-    text-align: center;
-}
-#intro {
-    border-bottom: 1px solid #dcdcde;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-}
-#main {
-    padding: 2rem;
-    margin-left: 300px;
-}
+    .test-section img {
+        width: 75%;
+    }
 
-@media (max-width: 700px) {
-    nav {
-        display: none;
-    }
-    #sidebar {
-        display: block;
-        position:relative;
-        width: 100%;
-        height: auto;
-        padding: 2rem 0 2rem 0;
-    }
-    #intro {
-        border-bottom: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    #main {
+    .divider {
+        width: 80%;
+        height: 0;
+        border-bottom: 1px solid #78777e;
         margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+
     }
-}
 
-nav li {
-    list-style-type: none;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    text-align: left;
-}
-nav a {
-    text-decoration: none;
-}
+    .img-container {
+        text-align: right;
+    }
 
-.skill-icon {
-    height: 3rem;
-    border-radius: 20%;
-}
-#profile-pic {
-    width: 9rem;
-    height: 9rem;
-    border-radius: 50%;
-    /* margin-bottom: 2rem; */
-}
-.section {
-    margin: 2rem 0 4rem 0;
-}
+    .inner {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: center;
+        justify-items: center;
+    }
 
-a {
-    color: #b2c0eb;
-}
+    #sidebar {
+        width: 200px;
+        background-color: #070708;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding: 2.5rem;
+        text-align: center;
+    }
 
+    #intro {
+        border-bottom: 1px solid #dcdcde;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #main {
+        padding: 6rem;
+        margin-left: 300px;
+    }
+
+    @media (max-width: 700px) {
+        nav {
+            display: none;
+        }
+
+        #skills {
+            display: none;
+        }
+
+        #sidebar {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 2rem 0 2rem 0;
+        }
+
+        #intro {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        #main {
+            padding: 1rem;
+            margin: auto;
+        }
+
+        .img-container {
+            display: none;
+        }
+
+        .inner {
+            margin: auto;
+            display: block;
+        }
+    }
+
+    nav li {
+        list-style-type: none;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    .skill-icon {
+        height: 3rem;
+        border-radius: 20%;
+    }
+
+    #profile-pic {
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        /* margin-bottom: 2rem; */
+    }
+
+    .section {
+        margin: 2rem 0 4rem 0;
+    }
+
+    a {
+        color: #b2c0eb;
+    }
+
+    #intro a {
+        color: inherit;
+        /* font-size: 1.5rem; */
+    }
 </style>
+
 <body>
     <div id="sidebar">
         <div id="intro">
-            <img id="profile-pic" src="becca.jpg">
+            <img id="profile-pic" src="becca.jpg" alt="Profile picture">
             <p>Rebecca Flach</p>
             <p><em>Engineering Student</em></p>
-            <p><a href="rflach Resume.pdf" download>Resume</a></p>
+            <a href="https://github.com/RebeccaFlach"><i title="Github" class="fa-brands fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/rebecca-flach/"><i title="LinkedIn"
+                    class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a href="mailto:beccablockflach@gmail.com"><i title="Email" class="fa-solid fa-envelope fa-lg"></i></a>
+            <a href="rflach Resume.pdf"><i title="Resume" class="fa-solid fa-file fa-lg"></i></a>
         </div>
+        <div id="skills">
+            <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+            <img class="skill-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">
+            <img class="skill-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/667px-Matlab_Logo.png">
+            <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+            <img class="skill-icon"
+                src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png">
+            <img class="skill-icon" src="https://developer.apple.com/swift/images/swift-og.png">
+        </div>
+
         <!-- <nav>
             <li><a class="nav-link" href="#about">About</a> </li>
             <li><a class="nav-link" href="#skills">Skills</a></li>
@@ -105,53 +179,158 @@ a {
         <div id="about" class="section">
             <h1> Hi! I'm Becca</h1>
             <p>
-                I'm currently a first year student at Olin College of Engineering, studying engineering with a concentration in computing.
+                I am in my second year at Olin College of Engineering, studying engineering with a
+                concentration in computing. I am currently looking for summer 2024 internships in software or
+                electrical
+                engineering.
             </p>
-            <p>
-                I've been programming outside of school for over two years, and I'm always learning and working on personal projects. 
-            </p>
-        
-        </div>
-        <div id="skills" class="section">
-            <h2>Skills</h2>
-            <p>
-                Most of my experience is with web development, especially the MERN stack which I worked with extensively during my internship. My biggest indepedent project was with React Native, and I really enjoyed working with that.
-            </p>
-            <p>
-                In school and in smaller projects, I have worked with various languages and frameworks. I learn quickly, and I am highly comfortable working with new languages.
-            </p>
-            <h3>Most experience:</h3>
-            <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
-            <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">
-            <img class="skill-icon" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png">
-            <img class="skill-icon" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png">
 
-            <h3>Other skills:</h3>
-            <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/667px-Matlab_Logo.png">
-            <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
-            <img class="skill-icon" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png">
-            <img class="skill-icon" src="https://vuejs.org/images/logo.png">
-            <img class="skill-icon" src="https://angular.io/assets/images/logos/angular/angular.png">
 
         </div>
-        <div id="projects" class="section">
+        <div id="" class="section">
+            <h2>Experience & Projects</h2>
+        </div>
+        <div id="" class="test-section">
+            <h2>Clew</h2>
+            <div class="inner">
+                <div>
+                    <p>Over the summer, I worked with Olin's OCCAM Lab on Clew, an app for indoor navigation for
+                        blind
+                        and visually impaired people.</p>
+                    <p>I focused reducing mapping error by integrating multiple data sources. We took odometry and
+                        Google Cloud Anchor data from multiple mapping sessions, and used graph optimization to
+                        create a
+                        more
+                        accurate map.</p>
+                    <p>Most of my work was done in Python, but I also became proficient in Swift and learned a lot
+                        about
+                        accessible design.</p>
+                </div>
+                <div class="img-container">
+                    <img src="clew.jpg">
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div>
+        <div id="" class="test-section">
+            <h2>Flybox & Kite</h2>
+            <div class="inner">
+                <div>
+                    <p>Two Olin teams working senior capstone projects hired me to do the more specialized web and
+                        development that they didn't have the skills to do.</p>
+                    <p>One was the Flybox team who were building an environment for fruit fly circadian rhythm
+                        experiments. I implemented their design for a web app where researchers could schedule the
+                        box
+                        to run different lighting conditions across multiday experiments. You can see the product
+                        here.
+                    </p>
+                    <p>The other was Kite, building an app for financial education. I integrated Alpaca, built their
+                        user management and login systems, and helped with various small projects. </p>
+                </div>
+                <div class="img-container">
+                    <img src="flybox.png">
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div>
+        <div id="" class="test-section">
+            <h2>MREN</h2>
+            <div class="inner">
+                <div>
+                    <p>While in high school I interned for and was mentored by a small startup for eight months. I
+                        worked mostly with
+                        React, and learned the basics of full stack web development with Mongo, Express, and Node
+                    </p>
+                    <p> I started with small bug fixes, and as I learned I was given bigger projects to work on, and
+                        more freedom to make design and architecture decisions. I was taught how to write quality
+                        code,
+                        accept feedback through code reviews, make time estimates, use git, and work within a larger
+                        project.
+                    </p>
+
+                </div>
+                <div class="img-container">
+                    <!--<img src="mren.jpg">  -->
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div>
+        <div id="" class="test-section">
+            <h2>Software Design</h2>
+            <div class="inner">
+                <div>
+                    <p>For an open ended class project, I used OpenCV to create a program that would detect
+                        solutions in
+                        the card game Set, by first locating cards in the picture then determining the color, shape
+                        and
+                        infill of each.</p>
+                    <p> In that class, I also used the spotify API to analyze a group of playlists using NumPy.
+                    </p>
+
+                </div>
+
+                <div class="img-container">
+                    <img src="https://olincollege.github.io/set-finder/Pasted%20image%2020230504170229.png">
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div>
+
+        <div id="" class="test-section">
+            <h2>TheSIS</h2>
+            <div class="inner">
+                <div>
+                    <p>
+                        As in independent project while I was in high school, I built a redesigned app for my
+                        school's student information system. I got feedback from my peers,teachers, and
+                        administrators
+                        to design the app, and implemented it using React Native.
+                    <p>
+                        After building the frontend app, I worked with a mentor to try to expand the scope of
+                        the project. I brought in a couple of classmates to help with coding, and reached out to
+                        school
+                        district administration and my mentor's contacts to make a plan to eventually create
+                        a full system for my district. While this didn't lead anywhere, I learned a lot through this
+                        process.
+                    </p>
+                    </p>
+
+                </div>
+
+                <div class="img-container">
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div id="projects" class="section">
             <h2>Projects & Experience</h2>
 
             <ul>
-                <li>Internship: interned at a startup for 8 months, working on everything from simple bug fixes to full feature implementation (MERN stack).</li>
-                <li>Indepedent Project: built a full app to access my school's grade system with a <a href="https://github.com/RebeccaFlach/thesisClone" >better frontend</a> (React Native).</li>
-                <li>Academic: taking software design (python) and modeling and simulation (matlab), both highly project and team focused classes. </li>
+                <li>Internship: interned at a startup for 8 months, working on everything from simple bug fixes to full
+                    feature implementation (MERN stack).</li>
+                <li>Indepedent Project: built a full app to access my school's grade system with a <a
+                        href="https://github.com/RebeccaFlach/thesisClone">better frontend</a> (React Native).</li>
+                <li>Academic: taking software design (python) and modeling and simulation (matlab), both highly project
+                    and team focused classes. </li>
                 <li>Project Team: working in a team on hydroponics automation (Python, Javascript)</li>
-                <li>Volunteer Work: helped nonprofits like <a href="https://chessctr.org/">US Chess Center</a> and <a href="https://bearcanyonlibraryfriends.org/">a local Friends of the Library</a> modernize by teaching Wordpress and setting up mailing systems and social media. </li>
-                <li>Small Projects: created many things, including <a href="https://github.com/RebeccaFlach/jugglweb">video processing for juggling</a> and a <a href="https://github.com/RebeccaFlach/timr">simple rubiks cube timer</a>.</li>
-                
+                <li>Volunteer Work: helped nonprofits like <a href="https://chessctr.org/">US Chess Center</a> and <a
+                        href="https://bearcanyonlibraryfriends.org/">a local Friends of the Library</a> modernize by
+                    teaching Wordpress and setting up mailing systems and social media. </li>
+                <li>Small Projects: created many things, including <a
+                        href="https://github.com/RebeccaFlach/jugglweb">video processing for juggling</a> and a <a
+                        href="https://github.com/RebeccaFlach/timr">simple rubiks cube timer</a>.</li>
+
             </ul>
 
         </div>
         <div id="contact" class="section">
             <h2>Contact Me</h2>
-            <p>You can get in touch with me at <a href="mailto:rebeccabflach@gmail.com">rebeccabflach@gmail.com</a>, or connect with me on <a href="https://www.linkedin.com/in/rebecca-flach/">LinkedIn</a>.</p>
-        </div>
-    </main>
+            <p>You can get in touch with me at <a href="mailto:rebeccabflach@gmail.com">rebeccabflach@gmail.com</a>, or
+                connect with me on <a href="https://www.linkedin.com/in/rebecca-flach/">LinkedIn</a>.</p>
+        </div> -->
+        </main>
 </body>
+
 </html>
